@@ -356,7 +356,7 @@ define([
                 spanNode = dojoConstruct.place(dojoConstruct.create("span", {
                     "innerHTML": value
                 }), labelNode);
-
+                this._addOnclickToRadiobuttonItem(labelNode, key);
                 return labelNode;
             },
 
@@ -381,7 +381,6 @@ define([
                 if ("" + this._contextObj.get(this.entity) === key) {
                     dojoAttr.set(radiobuttonNode, "defaultChecked", true);
                 }
-                this._addOnclickToRadiobuttonItem(radiobuttonNode, key);
                 return radiobuttonNode;
             },
 
