@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<widget id="RadioButtonList.widget.AssocRadioButtonList" needsEntityContext="true" allowNonPersistableEntities="true" xmlns="http://www.mendix.com/widget/1.0/">
+<widget id="RadioButtonList.widget.AssocRadioButtonList" needsEntityContext="true" xmlns="http://www.mendix.com/widget/1.0/">
 	<name>Association Radiobutton List</name>
 	<description>Creates a radiobutton list which will set an association value.</description>
 
@@ -15,7 +15,7 @@
 				<enumerationValue key="mf">Microflow</enumerationValue>
 			</enumerationValues>
 		</property>
-		<property key="RadioListObject" type="entity" required="true">
+		<property key="RadioListObject" type="entity" required="true" allowNonPersistableEntities="true">
 			<caption>Entity to list</caption>
 			<category>Data source</category>
 			<description>The entity of which the radiobutton list will be composed.</description>
